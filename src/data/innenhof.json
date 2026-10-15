@@ -1,0 +1,154 @@
+{
+  "name": "Kommunisten-Base",
+  "palette": {
+    "P": {
+      "block": "polished_andesite",
+      "name": "Platzpflaster",
+      "farbe": "#9b9b9b"
+    },
+    "R": {
+      "block": "red_concrete",
+      "name": "Roter Beton",
+      "farbe": "#a02020"
+    },
+    "S": {
+      "block": "stone_bricks",
+      "name": "Steinziegel",
+      "farbe": "#6f6f6f"
+    },
+    "W": {
+      "block": "stone_brick_wall",
+      "name": "Steinziegelmauer",
+      "farbe": "#858585"
+    },
+    "L": {
+      "block": "lantern",
+      "name": "Laterne",
+      "farbe": "#f2b03c"
+    }
+  },
+  "zonen": [
+    {
+      "id": "innenhof",
+      "name": "Innenhof",
+      "beschreibung": "Platz zwischen Tor und Palasttreppe. Alle Koordinaten sind relativ zum Ursprung auf der Mittelachse am Tor. Norden ist -z, Westen ist -x.",
+      "teile": [
+        {
+          "id": "stern",
+          "name": "Roter Stern",
+          "beschreibung": "Pixel-Stern auf dem Sternplatz (41x41). Die Spitze zeigt nach Norden zum Palast. Die Mittelachse (x=0) ist die Symmetrieachse.",
+          "position": {
+            "x": -20,
+            "y": 0,
+            "z": -50
+          },
+          "ebenen": [
+            {
+              "y": 0,
+              "raster": [
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPRPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPRPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPRPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPRRRPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPRRRPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPRRRPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPRRRRRPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPRRRRRPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPRRRRRRRPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPRRRRRRRPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPRRRRRRRPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPRRRRRRRRRPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPRRRRRRRRRPPPPPPPPPPPPPPPP",
+                "PPRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRPP",
+                "PPPRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRPPP",
+                "PPPPPRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRPPPPP",
+                "PPPPPPRRRRRRRRRRRRRRRRRRRRRRRRRRRRRPPPPPP",
+                "PPPPPPPRRRRRRRRRRRRRRRRRRRRRRRRRRRPPPPPPP",
+                "PPPPPPPPPRRRRRRRRRRRRRRRRRRRRRRRPPPPPPPPP",
+                "PPPPPPPPPPRRRRRRRRRRRRRRRRRRRRRPPPPPPPPPP",
+                "PPPPPPPPPPPRRRRRRRRRRRRRRRRRRRPPPPPPPPPPP",
+                "PPPPPPPPPPPPPRRRRRRRRRRRRRRRPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPRRRRRRRRRRRRRRRPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPRRRRRRRRRRRRRRRPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPRRRRRRRRRRRRRRRRRPPPPPPPPPPPP",
+                "PPPPPPPPPPPPRRRRRRRRRRRRRRRRRPPPPPPPPPPPP",
+                "PPPPPPPPPPPPRRRRRRRRRRRRRRRRRPPPPPPPPPPPP",
+                "PPPPPPPPPPPRRRRRRRRRPRRRRRRRRRPPPPPPPPPPP",
+                "PPPPPPPPPPPRRRRRRRRPPPRRRRRRRRPPPPPPPPPPP",
+                "PPPPPPPPPPPRRRRRRPPPPPPPRRRRRRPPPPPPPPPPP",
+                "PPPPPPPPPPRRRRRRPPPPPPPPPRRRRRRPPPPPPPPPP",
+                "PPPPPPPPPPRRRRPPPPPPPPPPPPPRRRRPPPPPPPPPP",
+                "PPPPPPPPPPRRRPPPPPPPPPPPPPPPRRRPPPPPPPPPP",
+                "PPPPPPPPPPRPPPPPPPPPPPPPPPPPPPRPPPPPPPPPP",
+                "PPPPPPPPPRPPPPPPPPPPPPPPPPPPPPPRPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+              ]
+            }
+          ],
+          "schritte": [
+            "Ursprung der Zone auf der Mittelachse am Tor festlegen und mit einem Markierungsblock kennzeichnen.",
+            "Vom Ursprung 50 Blöcke nach Norden und 20 nach Westen gehen: das ist die obere linke Ecke des Platzes.",
+            "Die Mittelachse (Spalte 20) vom Nord- bis zum Südrand mit einer Markierungslinie auslegen.",
+            "Den Stern Reihe für Reihe von Norden nach Süden mit rotem Beton legen, erst die Ränder, dann die Mitte.",
+            "Die restliche Fläche mit Platzpflaster auffüllen.",
+            "Kontrolle: Die linke und rechte Hälfte der Mittelachse müssen gespiegelt gleich aussehen."
+          ]
+        },
+        {
+          "id": "laternenpfosten",
+          "name": "Laternenpfosten",
+          "beschreibung": "Kleiner Pfosten neben dem Sternplatz, als Beispiel für ein Teil mit mehreren Ebenen. Der Mittelpunkt liegt bei x=-22, z=-30.",
+          "position": {
+            "x": -23,
+            "y": 0,
+            "z": -31
+          },
+          "ebenen": [
+            {
+              "y": 0,
+              "raster": [
+                "SSS",
+                "SSS",
+                "SSS"
+              ]
+            },
+            {
+              "y": 1,
+              "raster": [
+                "...",
+                ".W.",
+                "..."
+              ]
+            },
+            {
+              "y": 2,
+              "raster": [
+                "...",
+                ".W.",
+                "..."
+              ]
+            },
+            {
+              "y": 3,
+              "raster": [
+                "...",
+                ".L.",
+                "..."
+              ]
+            }
+          ],
+          "schritte": [
+            "Sockel 3x3 aus Steinziegeln legen.",
+            "Mittig zwei Steinziegelmauern übereinander setzen.",
+            "Laterne oben auf die Mauer setzen."
+          ]
+        }
+      ]
+    }
+  ]
+}
