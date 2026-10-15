@@ -4,6 +4,7 @@ export interface PaletteEintrag {
   block: string; // Minecraft-ID, z. B. "red_concrete"
   name: string; // Anzeigename
   farbe: string; // Farbe im Viewer, z. B. "#a02020"
+  ohneMaterial?: boolean; // true = zählt nicht in die Materialliste (z. B. vorhandenes Gelände)
 }
 
 export interface Ebene {
@@ -14,6 +15,7 @@ export interface Ebene {
 export interface Teil {
   id: string;
   name: string;
+  phase: number; // Nummer der Bauphase
   beschreibung: string;
   // Obere linke (nordwestliche) Ecke des Rasters, relativ zum Ursprung der Zone
   position: { x: number; y: number; z: number };
@@ -21,10 +23,19 @@ export interface Teil {
   schritte: string[];
 }
 
+export interface Phase {
+  nr: number;
+  name: string;
+  beschreibung: string;
+}
+
 export interface Zone {
   id: string;
   name: string;
   beschreibung: string;
+  // Rechteck der Zone: obere linke Ecke (x, z), Breite in x, Länge in z
+  grenzen: { x: number; z: number; breite: number; laenge: number };
+  phasen: Phase[];
   teile: Teil[];
 }
 

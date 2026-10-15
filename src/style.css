@@ -229,3 +229,41 @@ th {
     grid-template-columns: 1fr;
   }
 }
+
+.phasen-titel {
+  margin: 14px 0 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-leise);
+}
+
+.link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--gold);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.phase {
+  margin-bottom: 14px;
+}
+
+.phase h4 {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.phase ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+}
+
+.phase li {
+  margin-bottom: 3px;
+}
